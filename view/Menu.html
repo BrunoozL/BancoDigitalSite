@@ -12,28 +12,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 
     <style>
+
         body {
             color: #fff;
-            height: 200vh;
+            height: 10vh;
             background-color: rgb(29, 28, 28);
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
 
-       /* .botao {
-          font-family: 'Julius Sans One';
-          color: #ff1493;
-          background-color: transparent;
-          font-size: 20px;
-          border-radius: 30px;
-          width: 125px;
-          height: 50px;
-          border-color: #ff1493;
-          line-height: 100%;
-          text-align: center;
-          align-items: center;
-        } */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
 
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .botao {
+          font-family: 'Poppins', sans-serif;
+          font-size: 20px;
+          width: 100px;
+          height: 50px;
+          text-align: center;
+          padding-left: 90px;
+        } 
 
         h1 {
           font-family: 'Roboto', sans-serif; 
@@ -41,6 +54,7 @@
           font-size: 72px;
           padding-left: 90px;
         }
+
         h2 {
           font-family: 'Poppins', sans-serif;
           font-size: 24px;
@@ -51,6 +65,7 @@
           font-family: 'Roboto', sans-serif;
           font-size: 55px;
           padding-left: 90px;
+          padding-top: 300px;
         }
 
         h4 {
@@ -65,36 +80,37 @@
           text-align: center;
         }
 
-          .logo {
-            position: fixed;
-            left: 30px;
-            top: 30px;
-            height: 75px;
-            width: 75px;
-          }
-          .logofundo {
-            width: 250px;
-            height: 250px;
-            padding-left: 70vh;
-            padding-top: 40vh;
-          }
+        .logo {
+          position: fixed;
+          left: 30px;
+          top: 30px;
+          height: 75px;
+          width: 75px;
+        }
 
-          .container {
-            display: flex;
-            align-items: center;
-            width: max-content;
-          }
+        .logofundo {
+          width: 250px;
+          height: 250px;
+          padding-left: 70vh;
+          padding-top: 40vh;
+        }
 
-          footer {
-            font-family: 'Roboto', sans-serif;
-            background-color: #000000;
-            color: #fff;
-            padding: 10px;
-            width: 100%;
-            bottom: 0;
-            text-align: center;
-            left: 0;
-          }
+        .container {
+          display: flex;
+          align-items: center;
+          width: max-content;
+        }
+
+        footer {
+          font-family: 'Roboto', sans-serif;
+          background-color: #000000;
+          color: #fff;
+          padding: 10px;
+          width: 100%;
+          bottom: 0;
+          text-align: center;
+          left: 0;
+        }
 
           .text_rodape {
             display: flex;
@@ -106,10 +122,16 @@
             color: #fff;
           }
 
-          .gradiente-limitado {
+          .gradiente-limitado-1 {
             width: 100%;
             height: 100vh;
             background: linear-gradient(to bottom, black, #7c0947);
+          }
+
+          .fundo2 {
+            width: 100%;
+            height: 80vh;
+            background: #000000;
           }
 
           .tela1 {
@@ -118,8 +140,8 @@
             height: 665px;
             margin-right: 125px;
             border-radius: 50px;
-            border-top-right-radius: 85px;
-            border-top-left-radius: 85px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
 
           }
 
@@ -129,8 +151,8 @@
             height: 665px;
             margin-right: 125px;
             border-radius: 50px;
-            border-top-right-radius: 85px;
-            border-top-left-radius: 85px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
           }
 
           .tela3 {
@@ -138,12 +160,25 @@
             width: 409px;
             height: 665px;
             border-radius: 50px;
-            border-top-right-radius: 85px;
-            border-top-left-radius: 85px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
           }
           .telas {
             display: flex;
             justify-content: center;
+            padding-bottom: 20px;
+          }
+
+          .text_rdp1 {
+            margin-right: 87%;
+          }
+
+          .text_rdp2 {
+            margin-right: 5px;
+          }
+
+          .text_rdp3 {
+            color:white;
           }
 
     </style>
@@ -154,7 +189,7 @@
 
   <body>
 
-    <div class="gradiente-limitado">
+    <div class="gradiente-limitado-1">
 
       <img class="logo" src="../imagens/logo.png">
 
@@ -176,22 +211,30 @@
         <img class="tela3" src="../imagens/tela3.png">
     </div>
 
+    <div class="fundo2">
       <section>
         <h3>Sobre Nós</h3>
         <h4>Somos a SoulBank, um site para banco digital. Nosso objetivo é oferecer <br> soluções financeiras inovadoras e acessíveis para nossos clientes. <br> <br>
           Buscamos simplificar a vida financeira das pessoas, proporcionando <br> praticidade, segurança e eficiência em todas as transações. Conte conosco <br> para uma experiência bancária moderna e personalizada.</h4>
-        <button class="botao">Ver 
-        <a href="https://github.com/BrunoozL/AppBancoDigital"></a>
-      </button> 
+        <a href="https://github.com/BrunoozL/AppBancoDigital" class="botao"> Ver </a>
       </section>
-
-
     </div>
+
   <footer>
     <div class="text_rodape">
-      <p1>SoulBank</p1>
-      <p2>Made by</p2>
+
+      <div class="text_rdp1">
+        <p1>SoulBank</p1>
+      </div>
+
+      <div class="text_rdp2">
+        <p2>Made by</p2>
+      </div>
+
+      <div class="text_rdp3">
         <a href="https://github.com/BrunoozL">BrunoozL</a>
+      </div>
+
     </div>
   </footer>
   </body>
