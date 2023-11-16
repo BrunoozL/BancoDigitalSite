@@ -13,10 +13,11 @@
 
     <style>
         body {
-            background-color: black;
             color: #fff;
-            background: linear-gradient(to bottom, black, #7c0947);
-            height: 100vh;
+            height: 200vh;
+            background-color: rgb(29, 28, 28);
+            margin: 0;
+            padding: 0;
         }
 
        /* .botao {
@@ -47,15 +48,21 @@
         }
 
         h3 {
-          font-family: 'Poppins', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 55px;
           padding-left: 90px;
         }
 
         h4 {
           font-family: 'Poppins', sans-serif;
-          font-size: 24px;
+          font-size: 18px;
           padding-left: 90px;
+        }
+
+        h5 {
+          font-family: 'Roboto', sans-serif;
+          font-size: 50px;
+          text-align: center;
         }
 
           .logo {
@@ -86,7 +93,6 @@
             width: 100%;
             bottom: 0;
             text-align: center;
-            position: fixed;
             left: 0;
           }
 
@@ -100,6 +106,45 @@
             color: #fff;
           }
 
+          .gradiente-limitado {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, black, #7c0947);
+          }
+
+          .tela1 {
+            display: flex;
+            width: 409px;
+            height: 665px;
+            margin-right: 125px;
+            border-radius: 50px;
+            border-top-right-radius: 85px;
+            border-top-left-radius: 85px;
+
+          }
+
+          .tela2 {
+            display: flex;
+            width: 409px;
+            height: 665px;
+            margin-right: 125px;
+            border-radius: 50px;
+            border-top-right-radius: 85px;
+            border-top-left-radius: 85px;
+          }
+
+          .tela3 {
+            display: flex;
+            width: 409px;
+            height: 665px;
+            border-radius: 50px;
+            border-top-right-radius: 85px;
+            border-top-left-radius: 85px;
+          }
+          .telas {
+            display: flex;
+            justify-content: center;
+          }
 
     </style>
 
@@ -108,6 +153,8 @@
   </head>
 
   <body>
+
+    <div class="gradiente-limitado">
 
       <img class="logo" src="../imagens/logo.png">
 
@@ -120,17 +167,26 @@
         <img class="logofundo" src="../imagens/logofundo.png">
       </div>
 
-      <!-- <button class="botao">Ver 
-        <a href="https://github.com/BrunoozL/AppBancoDigital"></a>
-      </button> -->
+    </div>
+
+    <h5>Telas do App</h5>
+    <div class="telas">
+        <img class="tela1" src="../imagens/tela1.png">
+        <img class="tela2" src="../imagens/tela2.png">
+        <img class="tela3" src="../imagens/tela3.png">
+    </div>
 
       <section>
         <h3>Sobre Nós</h3>
-        <h4>Conteúdo da Seção 1...</h4>
+        <h4>Somos a SoulBank, um site para banco digital. Nosso objetivo é oferecer <br> soluções financeiras inovadoras e acessíveis para nossos clientes. <br> <br>
+          Buscamos simplificar a vida financeira das pessoas, proporcionando <br> praticidade, segurança e eficiência em todas as transações. Conte conosco <br> para uma experiência bancária moderna e personalizada.</h4>
+        <button class="botao">Ver 
+        <a href="https://github.com/BrunoozL/AppBancoDigital"></a>
+      </button> 
       </section>
 
 
-      
+    </div>
   <footer>
     <div class="text_rodape">
       <p1>SoulBank</p1>
